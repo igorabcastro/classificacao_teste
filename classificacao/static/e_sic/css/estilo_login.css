@@ -1,0 +1,78 @@
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic,100italic,100);*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+
+body{
+	background-image: url("../img/bg2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	/*background: rgb(240,240,240);*/
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Raleway', sans-serif;
+}
+
+#logo-governo{
+	padding-top: 2%;
+	padding-bottom: 3%;
+	padding-left: 5%;
+	padding-right: 5%;
+	/*background-color: rgba(40,40,40,0.1);*/
+	/*border-radius: 30px;*/
+}
+
+#nome-sistema{
+	padding-bottom: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	font-size: 30pt;
+	color: rgb(254,254,254);
+}
+
+#login-senha{
+	/*background: rgb(221,63,84);*/
+	padding: 5%;
+	background-color: rgba(40,40,40,0.1);
+}
+
+.row{
+	margin-right: 0px;
+}
+
+
+
+.footer {
+	padding-bottom: 4px;
+	padding-top: 5px;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	/*background-color: rgba(39, 174, 96,1.0);*/
+	color: #FEFEFE;
+	background-color: rgba(40,40,40,0.1);
+}
+#cabecalho{
+	padding-top: 3%;
+	/*background-color: rgba(39, 174, 96,1.0);*/
+}
+
+#submit{
+	margin-top: 2%;
+}
+
+.input-group{
+	margin-top: 1%;
+}
+
+#descricao{
+	margin-top: 2%;
+	color: rgb(40,75,140);
+}
+
+  /* All Mobile Sizes (devices and browser) */
+/* @media only screen and (max-width: 767px) {
+ 	p > :nth-child(1) i{
+ 		font-size: 10px;
+ 	}
+ }
+*/
+

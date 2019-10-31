@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block breadcrumb %}
+   	<li class="active">desclassificação</li>
+{% endblock breadcrumb %}
+
+{% block title_page %}
+
+{% endblock title_page %}
+
+{% block titulo %}
+
+{% endblock titulo %}
+
+{% block titulo_pagina %}
+
+{% endblock titulo_pagina %}
+
+{% block content %}
+    <div class="col">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3>Desclassificação</h3>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label for="und_gestora">Unidade gestora:</label>
+                        <input type="text" style="" id="und_gestora" name="und_gestora" value="CGE" disabled/>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="id_nic">NIC:</label>
+                        <input type="text" style="" id="id_nic" value="123456121231234" disabled/>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="assunto">Assunto:</label>
+    <!--                    <input type="text" style="" id="assunto" name="assunto" value="Informações do documento." disabled/>-->
+                        <textarea id="assunto" name="assunto" rows="5" disabled>Informações do documento.</textarea>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="razao_classif">Razão da Classificação:</label>
+    <!--                    <input type="text" style="" id="razao_classif" name="razao_classif" value="Razões para o documento ser desclassificado." disabled/>-->
+                        <textarea id="razao_classif" name="razao_classif" rows="5" disabled>Razões para o documento ser desclassificado.</textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label for="grau_sigilo">Grau de Sigilo:</label>
+                        <input type="text" style="" id="grau_sigilo" name="grau_sigilo" value="Secreto" disabled/>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="data_prod">Data de Produção:</label>
+                        <input type="date" style="" id="data_prod" value="2019-02-05" disabled/>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="prazo">Prazo:</label>
+                        <input type="text" style="" id="prazo" value="5 anos" disabled/>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="data_classif">Data da Classificação:</label>
+                        <input type="date" style="" id="data_classif" value="2019-05-06" disabled/>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="prazo_final">Prazo final da Classificação:</label>
+                        <input type="date" style="" id="prazo_final" value="2024-02-05" disabled/>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label for="autoridade_class">Autoridade classificadora:</label>
+                        <input type="text" style="" id="autoridade_class" name="autoridade_class" value="Autoridade X" disabled/>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="autoridade_ratif">Autoridade Ratificadora:</label>
+                        <input type="text" style="" id="autoridade_ratif" value="Senhora X" disabled/>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="autoridade_desclass">Autoridade desclassificadora:</label>
+                        <input type="text" style="" id="autoridade_desclass" name="autoridade_desclass" value="Autoridade A" />
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label for="fundamento_desclass">Fundamento da Desclassificação:</label>
+                        <select id="fundamento_desclass">
+                            {% for fundament in fund_desclassif %}
+                                <option>{{fundament.descricao}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">
+                        <span class="glyphicon glyphicon-ok"></span> Save
+                    </button>
+                    <a href="{% url 'home' %}" class="btn btn-default">Cancel</a>
+                </div>
+                <input type="text" style="display:none;" id="textInputId" name="someName"/>
+
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block js %}
+
+{% endblock %}

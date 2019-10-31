@@ -1,0 +1,66 @@
+@page {
+    margin: 30mm 8mm 18mm 8mm;
+    size: a4 landscape;
+} 
+
+html {
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: normal;
+    color: #000000;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+    border: 1px none;
+    display: inline;
+    width: auto;
+    height: auto;
+    white-space: normal;
+}
+
+p, li {
+    text-align: justify;
+    -weasy-hyphens: auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    margin-top: -25mm;
+    height: 30mm;
+    text-align: center;
+    font-size: 10px;
+    width: 100%;
+}
+
+.header > div {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: -12mm;
+    height: 10mm;
+    text-align: center;
+    font-size: 10px;
+    width: 100%;
+}
+
+.logo-left{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90px;
+    float: left;
+}
+
+.logo-right{
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 90px;
+    float: right;
+}

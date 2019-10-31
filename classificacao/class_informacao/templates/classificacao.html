@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% block css %}
+
+{% endblock %}
+
+{% block breadcrumb %}
+   	<li class="active">classificação</li>
+{% endblock breadcrumb %}
+
+{% block title_page %}
+
+{% endblock title_page %}
+
+{% block titulo %}
+
+{% endblock titulo %}
+
+{% block titulo_pagina %}
+
+{% endblock titulo_pagina %}
+
+{% block content %}
+    <div class="col">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3>Classificação</h3>
+            </div>
+            <div class="box-body">
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for hidden in form.hidden_fields %}
+                        {{ hidden }}
+                    {% endfor %}
+
+                    {% for field in form.visible_fields %}
+                        <div class="form-group">
+                            <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+        <!--                    {{ field|add_class:'form-control' }}-->
+                            {% render_field field class="form-control" %}
+                            {% for error in field.errors %}
+                                <span class="help-block">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% endfor %}
+            </div>
+            <div class="box-footer">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">
+                        <span class="glyphicon glyphicon-ok"></span> Save
+                    </button>
+                    <a href="{% url 'home' %}" class="btn btn-default">Cancel</a>
+                </div>
+                   <input type="text" style="display:none;" id="textInputId" name="someName"/>
+                </form>
+            </div>
+    </div>
+{% endblock content %}
+
+{% block js %}
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#id_grau_sigilo").change(function(){
+                    if($(this).val() == 1){
+                        $("#id_prazo_sigilo").val(5);
+                    }if($(this).val() == 2){
+                        $("#id_prazo_sigilo").val(10);
+                    }if($(this).val() == 3){
+                        $("#id_prazo_sigilo").val(20);
+                    }
+                });
+            });
+        </script>
+{% endblock %}

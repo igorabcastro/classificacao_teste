@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block css %}
+
+{% endblock %}
+
+{% block breadcrumb %}
+   	<li class="active">reclassificação</li>
+{% endblock breadcrumb %}
+
+{% block title_page %}
+
+{% endblock title_page %}
+
+{% block titulo %}
+
+{% endblock titulo %}
+
+{% block titulo_pagina %}
+
+{% endblock titulo_pagina %}
+
+{% block content %}
+    <div>
+        <h4>Reclassificação</h4>
+    </div>
+{% endblock content %}
+
+{% block js %}
+    {% if request.user.deve_atualizar_perfil %}
+        <script type="text/javascript">
+            $(window).load(function(){
+                $('#modalPerfilAtualizado').modal('show')
+            });
+        </script>
+    {% endif %}
+{% endblock %}

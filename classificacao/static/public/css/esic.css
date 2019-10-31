@@ -1,0 +1,225 @@
+/* -------------------------------------------------------------- */
+/* Global */
+/*-------------------------------------------------------------- */
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+a {
+  color: #a2121f;
+}
+
+a:hover {
+  color: #a2121f;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+#main {
+  background-color: #fff;}
+
+.no-padding{
+  padding: 0px;
+}
+
+.no-margin{
+  margin: 0px;
+}
+
+.no-padding-right{
+    padding-right: 0px;
+}
+
+.no-padding-left{
+    padding-left: 0px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px; }
+
+header{
+  background-color: rgb(0, 66, 132) !important;
+  height: 80px;
+}
+
+header .title-main{
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 0px;
+  padding-left: 12%;
+}
+
+header .title-description{
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 4px;
+}
+
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+  font-size: 14px;
+}
+
+#nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .6s ease-in-out;
+}
+
+.navbar {
+   min-height: 40px;
+}
+
+.navbar-nav > li > a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-brand{
+  font-size: 14px;
+  padding: 10px 10px;
+  line-height: 23px;
+  height: 40px;
+}
+
+footer {
+  background-color: #a2121f;
+  padding-top: 40px;
+  color: white;
+  margin-top: 18px;
+  padding-bottom: 20px;
+}
+
+footer h3{
+  font-weight: 600;
+  margin-top: 15px !important;
+}
+
+footer h5{
+  margin-top: 4px;
+}
+
+footer img#brasao{
+  width: 68px;
+}
+
+footer a{
+  color: white;
+}
+
+footer a:hover{
+  color: white;
+}
+
+footer ul{
+  list-style: none;
+  padding: 0px;
+
+}
+
+footer .links-footer{
+  border-left: 1px solid white;
+}
+
+.link-banner-footer{
+  padding: 20px 0px;
+}
+
+.link-banner{
+  background-color: #a2121f;
+  height: 160px;
+  color: white;
+  border: 10px solid white;
+  vertical-align: middle;
+  font-size: 36px;
+  padding: 23px;
+  line-height: 40px;
+
+}
+
+.link-banner a{
+  color: white;
+}
+
+.link-banner a:hover{
+  color: white;
+}
+
+.main-home{
+  padding-top: 20px;
+}
+
+.form-login-home{
+  min-height: 250px;
+}
+
+.solicitation-form{
+    margin-top:15px;
+}
+
+.solicitation-form .textarea{
+    min-height:220px; resize:none;
+}
+
+.solicitation-form select {
+    height:49px;
+}
+
+.form-control{
+    box-shadow:none;
+    border-color:#eee;
+}
+
+.form-control:focus{
+    box-shadow:none;
+    border-color:#00b09c;
+}
+
+.form-control-feedback{
+    line-height:50px;
+}
+
+.main-btn{
+    background:#a2121f;
+    border-color:#a2121f;
+    color:#fff;
+}
+
+.main-btn:hover{
+    background: #a2121f;
+    color:#fff;
+}
+
+.form-control-feedback {
+    line-height: 50px;
+    top: 0px;
+}
+
+#logo {
+    margin-top: 12px;
+}
+
+.navbar > .container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -10px;
+}
+
+.title-section{
+    color: #a2121f
+}

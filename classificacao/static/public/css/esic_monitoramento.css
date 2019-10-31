@@ -1,0 +1,22 @@
+/* -------------------------------------------------------------- */
+/* Global */
+/*-------------------------------------------------------------- */
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.8;
+  background-color: #2d353d;
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+.page-header{
+    color: #fff;
+}

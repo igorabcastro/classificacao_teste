@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block css %}
+
+{% endblock %}
+
+{% block breadcrumb %}
+   	<li class="active">Dashboard</li>
+{% endblock breadcrumb %}
+
+{% block title_page %}
+
+{% endblock title_page %}
+
+{% block titulo %}
+
+{% endblock titulo %}
+
+{% block titulo_pagina %}
+
+{% endblock titulo_pagina %}
+
+{% block content %}
+
+{% endblock content %}
+
+{% block js %}
+    {% if request.user.deve_atualizar_perfil %}
+        <script type="text/javascript">
+            $(window).load(function(){
+                $('#modalPerfilAtualizado').modal('show')
+            });
+        </script>
+    {% endif %}
+{% endblock %}
